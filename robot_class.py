@@ -77,7 +77,7 @@ class robot:
             One item in the returned list should be in the form: [landmark_index, dx, dy].
             '''
            
-        measurements = None
+        measurements = []
         for i in range(self.num_landmarks):
             dx = self.x - self.landmarks[i][0] + self.rand() * self.measurement_noise
             dy = self.y - self.landmarks[i][1] + self.rand() * self.measurement_noise
